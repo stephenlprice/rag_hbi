@@ -9,15 +9,25 @@
     "start": "next start",
     "lint": "next lint",
     "info": "next info",
+<<<<<<< HEAD
+=======
+    "demo": "next build && next start",
+>>>>>>> c54c7768af4c2cfd757941fec8a90b028b6a8a2e
     "static": "next build && next export",
     "serve": "HOSTING=local npm run static && npx serve out",
     "checkout": "git checkout prod",
     "rm": "ls docs | grep -vE '.gitignore|.nojekyll' | xargs -I {} rm -r docs/{}",
+<<<<<<< HEAD
     "cp": "cp -r out/. docs/. && git add docs -f",
     "push": "git commit -m 'automated deployment' && git push",
     "deploy": "npm run static && npm run checkout && npm run rm && npm run cp && npm run push",
     "orphan": "git checkout --orphan d && git add -A && git commit -m 'delete me'",
     "clear": "git switch main && git branch -D d",
+=======
+    "rsync": "rsync -r out/* docs/ && rsync -r --ignore-existing public/* docs/",
+    "push": "git add docs -f && git commit -m 'automated deployment' && git push",
+    "deploy": "npm run static && npm run checkout && npm run rm && npm run rsync && npm run push",
+>>>>>>> c54c7768af4c2cfd757941fec8a90b028b6a8a2e
     "save": "git add pages public && git commit -m 'saving content (/public & /pages)'",
     "revert": "git reset HEAD -- .",
     "upload": "npm run save && git push"
@@ -40,14 +50,32 @@
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@tanstack/react-query": "^5.4.3",
     "@tanstack/react-query-devtools": "^5.4.3",
+<<<<<<< HEAD
+=======
+    "axios": "^1.6.2",
+    "jsonpath-plus": "^7.2.0",
+>>>>>>> c54c7768af4c2cfd757941fec8a90b028b6a8a2e
     "next": "^13.5.4",
+    "next-auth": "^4.24.5",
     "nextra": "^2.13.2",
     "nextra-theme-docs": "^2.13.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+<<<<<<< HEAD
     "tabscale": "gitlab:jhegele/tabscale"
   },
   "devDependencies": {
+=======
+    "tabscale": "gitlab:jhegele/tabscale",
+    "uuid": "^9.0.1",
+    "vega": "^5.26.1",
+    "vega-interpreter": "^1.0.5",
+    "vega-lite": "^5.16.3",
+    "vega-tooltip": "^0.33.0"
+  },
+  "devDependencies": {
+    "@svgr/webpack": "^8.1.0",
+>>>>>>> c54c7768af4c2cfd757941fec8a90b028b6a8a2e
     "@tanstack/eslint-plugin-query": "^5.0.5",
     "@types/node": "18.11.10",
     "autoprefixer": "^10.4.16",

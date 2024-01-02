@@ -2,9 +2,15 @@
 title: User Management, Content Management, and Display with the REST API
 ---
 
-import Img from '../../components/img/img'
+import { Callout } from 'nextra/components'
+import Image from 'next/image'
+
 
 # User Management, Content Management, and Display with the REST API
+
+<Callout type="warning" emoji="⚠️">
+  This website is under construction. Content on this page is a placeholder.
+</Callout>
 
 Embedding a single visualization with the [Embedding API v3 or JavaScript API v2](/pages/01_embedding_and_jsapi) and enabling [single sign-on](/pages/02_auth_and_sso) is a crucial first step, but is only part of the story when building scaled solutions that use Tableau content as components. You often will have to use the REST API to integrate the users and content between your system and Tableau Server.
 
@@ -34,9 +40,9 @@ That's all there is to adding a new user, but you will likely want to make some 
 
 If your users have access to multiple workbooks and data sources, you will likely want to make a Table of Contents page similar to the below.
 
-<Img
+<Image
   alt='dynamic menu' 
-  src='/viz_TOC.png' 
+  src='/img/viz_TOC.png' 
   width={700}
   height={800}
 />
