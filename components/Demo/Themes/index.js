@@ -1,5 +1,4 @@
-import { Superstore } from './Superstore';
-import { NTO } from './NTO';
+import { DHL } from './DHL';
 
 export const Themes = (props) => {
   const { theme } = props;
@@ -13,9 +12,9 @@ export const Themes = (props) => {
 
   // if above check fails, load Superstore by default
   return (
-    <Superstore />
+    <DHL />
   )
 }
 
-export { Superstore, NTO };
+export { DHL };
 export { ThemeSelector } from './ThemeSelector';

@@ -1,34 +1,21 @@
-import { Superstore, NTO } from "./Themes"
+import { Superstore, DHL } from "./Themes"
 
 export const settings = {
   ai_chat: true,
   custom_metrics: true,
   themes: [
     {
-      label: "Superstore Analytics",
-      name: "superstore",
-      component: Superstore,
+      label: "DHL",
+      name: "dhl",
+      component: DHL,
       type: "default",
-      logo: "superstore.png",
+      logo: "dhl.png",
       styles: "",
       project: {
         name: "superstore_embedded",
         workbooks: [],
         data_sources: []
       }
-    },
-    {
-      label: "Northern Trail Outfitters",
-      name: "nto",
-      component: NTO,
-      type: "retail",
-      logo: "nto.png",
-      styles: "",
-      project: {
-        name: "nto",
-        workbooks: [],
-        data_sources: []
-      }
-    },
+    }
   ]
 }

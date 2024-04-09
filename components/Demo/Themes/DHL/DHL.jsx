@@ -3,7 +3,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "components/ui";
 import { Customers, OrderDetails, Overview, Product, Shipping  } from './index';
 
 
-export const Superstore = () => {
+export const DHL = () => {
   return (
     <Tabs defaultValue="overview" className="space-y-3">
       <TabsList>
