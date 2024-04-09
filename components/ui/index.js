@@ -71,4 +71,14 @@ export {
   SelectScrollDownButton,
 } from './Select';
 export { Skeleton } from './Skeleton';
-export { Tabs, TabsList, TabsTrigger, TabsContent } from './Tabs'
+export { Tabs, TabsList, TabsTrigger, TabsContent } from './Tabs';
+export {
+  Table,
+  TableHeader,
+  TableBody,
+  TableFooter,
+  TableHead,
+  TableRow,
+  TableCell,
+  TableCaption,
+} from './Table';
