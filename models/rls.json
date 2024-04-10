@@ -1,9 +1,9 @@
 {
   "users": {
     "A": {
-      "id": "mday@mail.com",
+      "id": "dschober@salesforce.com",
       "name": "Mackenzie Day",
-      "email": "mday@mail.com",
+      "email": "dschober@salesforce.com",
       "picture": "img/stock/mackenzie_day.png",
       "uaf": {
         "Superstore": []
@@ -44,6 +44,6 @@
       "uaf": {
         "Superstore": []
       }
-    } 
+    }
   }
 }

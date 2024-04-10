@@ -9,7 +9,7 @@ import {
   CarouselPrevious,
 } from "components/ui";
 
-import { useMetrics } from 'hooks';
+import { useMetrics, useTableauSession } from 'hooks';
 import { Metric } from "components";
 
 
@@ -18,7 +18,17 @@ export const Metrics = (props) => {
   const [user, setUser] = useState(null);
   const { status: session_status, data: session_data } = useSession({});
   // syncs with user metrics, only fires query when user is defined -> controlled query
-  const { status, data, error, isError, isSuccess } = useMetrics(user);
+  const { status: metris_status, data, error, isError, isSuccess } = useMetrics(user);
+
+  // tanstack query hook to manage embed sessions
+  const {
+    status,
+    data: jwt,
+    error: sessionError,
+    isSuccess: isSessionSuccess,
+    isError: isSessionError,
+    isLoading: isSessionLoading
+  } = useTableauSession('a');
 
   // updates user for authenticated components
   useEffect(() => {
